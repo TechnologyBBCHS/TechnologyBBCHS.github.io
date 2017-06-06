@@ -25,6 +25,7 @@
 	  text-align: center;
 	  vertical-align: top;
 	  margin-top: 20%;
+	  font-family: "Lucida Sans Unicode";
   }
   
   #links img {
@@ -58,8 +59,11 @@
 	ul#links.text{
 		margin-top: 0px;
 		text-align: center; 
+		
 	}
 	
-
+	p {
+		font-family: "Lucida Sans Unicode";
+	}
  
  
