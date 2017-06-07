@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html>
-	<body>
+	<head>
 		<link href="https://TechnologyBBCHS.github.io/assets/css/styles_div.css" rel="stylesheet" />
 		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 		<script>
 			$(document).ready(function() {
-				$('.slidingDiv').css('visibility', ($('.slidingDiv').css('visibility') == 'hidden') ? 'hidden' : 'visible');
-				$('img').click(function() {
-					$('.slidingDiv').css('visibility', ($('.slidingDiv').css('visibility') == 'visible') ? 'hidden' : 'visible');
+				$('#slidingDiv1').hide();	
+					$('#science').click(function() {
+						$('#slidingDiv1').css('visibility', ($('#slidingDiv1').css('visibility') == 'visible') ? 'hidden' : 'visible');
+						if($('#slidingDiv1').css('visibility') == 'hidden') {
+							$('#slidingDiv1').hide();
+						}
+						if($('#slidingDiv1').css('visibility') == 'visible') {
+							$('#slidingDiv1').show();
+						}
+					});
+					$('#temp').click(function() {
+						$('#slidingDiv2').css('visibility', ($('#slidingDiv2').css('visibility') == 'visible') ? 'hidden' : 'visible');
+						if($('#slidingDiv2').css('visibility') == 'hidden') {
+							$('#slidingDiv2').hide();
+						}
+						if($('#slidingDiv2').css('visibility') == 'visible') {
+							$('#slidingDiv2').show();
+						}
+					});
 				});
-			});
 		</script>
+	</head>
+	<body>
 		<div>
 			<ul id="links">
 				<li><a href="https://classroom.google.com/" imageanchor="1" target="_blank"><img alt="Google Classroom" src="https://technologybbchs.github.io/assets/img/common/GoogleClassroomBumpMap.png" /></a></li>
@@ -47,11 +64,10 @@
 				</li>
 			</ul>
 		</div>
-		
 		<div>
 			<ul id="links">
-				<li><img class="show_hide" src="https://technologybbchs.github.io/assets/img/common/Science.png"/></li>
-				<li></li>
+				<li><img id="science" class="show_hide" src="https://technologybbchs.github.io/assets/img/common/Science.png"/></li>
+				<li><img id="temp" src="https://technologybbchs.github.io/assets/img/common/Science.png"/></li>
 				<li></li>
 				<li></li>
 				<li></li>
@@ -60,32 +76,32 @@
 			</ul>
 		</div>
 		<div>
-			<div>
-				<ul class="text" id="links">
-					<li>
-						<p>Science</p>
-					</li>
-					<li>
-						<p></p>
-					</li>
-					<li>
-						<p></p>
-					</li>
-					<li>
-						<p></p>
-					</li>
-					<li>
-						<p></p>
-					</li>
-					<li>
-						<p></p>
-					</li>
-					<li>
-						<p></p>
-					</li>
-				</ul>
-			</div>
-		<div class="slidingDiv" style="visibility: hidden">
+		<div>
+			<ul class="text" id="links">
+				<li>
+					<p>Science</p>
+				</li>
+				<li>
+					<p></p>
+				</li>
+				<li>
+					<p></p>
+				</li>
+				<li>
+					<p></p>
+				</li>
+				<li>
+					<p></p>
+				</li>
+				<li>
+					<p></p>
+				</li>
+				<li>
+					<p></p>
+				</li>
+			</ul>
+		</div>
+		<div class="slidingDiv" id="slidingDiv1" style="visibility: hidden">
 			<div>
 				<ul id="links">
 					<li><a href="https://phet.colorado.edu/" imageanchor="1" target="_blank"><img alt="Google Classroom" src="https://technologybbchs.github.io/assets/img/science/PhET.png" /></a></li>
@@ -100,25 +116,63 @@
 			<div>
 				<ul class="text" id="links">
 					<li>
-						<p>PhET</p>
+						<p>PhET 1</p>
 					</li>
 					<li>
-						<p>Explore Learning (GIZMOS)</p>
+						<p>Explore Learning (GIZMOS) 1</p>
 					</li>
 					<li>
-						<p>Discovery Education Textbook</p>
+						<p>Discovery Education Textbook 1</p>
 					</li>
 					<li>
-						<p>P-Table</p>
+						<p>P-Table 1</p>
 					</li>
 					<li>
-						<p>Direct Measurement Videos</p>
+						<p>Direct Measurement Videos 1</p>
 					</li>
 					<li>
-						<p>Physics Classroom</p>
+						<p>Physics Classroom 1</p>
 					</li>
 					<li>
-						<p>Mastering Physics</p>
+						<p>Mastering Physics 1</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="slidingDiv" id="slidingDiv2" style="visibility: hidden; float: left; overflow: hidden">
+			<div>
+				<ul id="links">
+					<li><a href="https://phet.colorado.edu/" imageanchor="1" target="_blank"><img alt="Google Classroom" src="https://technologybbchs.github.io/assets/img/science/PhET.png" /></a></li>
+					<li><a href="http://www.explorelearning.com/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/ExploreLearning.png" /></a></li>
+					<li><a href="http://google.discoveryeducation.com/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/DiscoveryEducationTextbook.png" /></a></li>
+					<li><a href="http://www.ptable.com/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/Ptable.png" /></a></li>
+					<li><a href="http://serc.carleton.edu/dmvideos/videos.html" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/DirectMeasurementVideos.png" /></a></li>
+					<li><a href="http://www.physicsclassroom.com/Physics-Interactives" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/ThePhysicsClassroom.png" /></a></li>
+					<li><a href="https://www.masteringphysics.com/site/login.html" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/MasteringPhysics.png" /></a></li>
+				</ul>
+			</div>
+			<div>
+				<ul class="text" id="links">
+					<li>
+						<p>PhET 2</p>
+					</li>
+					<li>
+						<p>Explore Learning (GIZMOS) 2</p>
+					</li>
+					<li>
+						<p>Discovery Education Textbook 2</p>
+					</li>
+					<li>
+						<p>P-Table 2</p>
+					</li>
+					<li>
+						<p>Direct Measurement Videos 2</p>
+					</li>
+					<li>
+						<p>Physics Classroom 2</p>
+					</li>
+					<li>
+						<p>Mastering Physics 2</p>
 					</li>
 				</ul>
 			</div>
