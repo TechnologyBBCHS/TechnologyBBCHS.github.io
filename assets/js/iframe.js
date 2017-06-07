@@ -1,31 +1,4 @@
-        $(function(){
-
-            var iFrames = $('iframe');
-
-        	function iResize() {
-
-        		for (var i = 0, j = iFrames.length; i < j; i++) {
-        		  iFrames[i].style.height = iFrames[i].contentWindow.document.body.offsetHeight + 'px';}
-        	    }
-
-            	if ($.browser.safari || $.browser.opera) {
-
-            	   iFrames.load(function(){
-            	       setTimeout(iResize, 0);
-                   });
-
-            	   for (var i = 0, j = iFrames.length; i < j; i++) {
-            			var iSource = iFrames[i].src;
-            			iFrames[i].src = '';
-            			iFrames[i].src = iSource;
-                   }
-
-            	} else {
-            	   iFrames.load(function() {
-            	       this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
-            	   });
-            	}
-
-            });
-
-    
+  $('iframe.iframe_auto').iframeAutoHeight({
+	minHeight: 240, // Sets the iframe height to this value if the calculated value is less
+  heightOffset: 50 // Optionally add some buffer to the bottom
+  });
