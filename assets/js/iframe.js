@@ -1,4 +1,2 @@
-function resizeIframe() {
-parent.document.getElementById('iframe_auto').style.height = document['body'].offsetHeight + 'px';
-}
-
+function AdjustIframeHeightOnLoad() { document.getElementById("form-iframe").style.height = document.getElementById("form-iframe").contentWindow.document.body.scrollHeight + "px"; }
+function AdjustIframeHeight(i) { document.getElementById("form-iframe").style.height = parseInt(i) + "px"; }
