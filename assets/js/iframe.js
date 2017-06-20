@@ -1,7 +1,7 @@
 $(document).ready(function() {
-	$('#science').click(function() {
-		if($('#iframAuto').css('height') < '500px') {
-			$('#iframAuto').css("height","500px");
+	$("#science").click(function() {
+		if($("#iframAuto").css("height") < "500px") {
+			$("#iframAuto").css("height", "500px");
 		}
 	});
 });

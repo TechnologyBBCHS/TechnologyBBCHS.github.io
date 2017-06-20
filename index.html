@@ -5,23 +5,24 @@
 		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 		<script>
 			$(document).ready(function() {
-				$('#slidingDiv1').hide();	
+				$('#slidingDiv1').hide();
+				$('#slidingDiv2').hide();
 					$('#science').click(function() {
 						$('#slidingDiv1').css('visibility', ($('#slidingDiv1').css('visibility') == 'visible') ? 'hidden' : 'visible');
 						if($('#slidingDiv1').css('visibility') == 'hidden') {
-							$('#slidingDiv1').hide();
+							$('#slidingDiv1').fadeOut();
 						}
 						if($('#slidingDiv1').css('visibility') == 'visible') {
-							$('#slidingDiv1').show();
+							$('#slidingDiv1').fadeIn("slow");
 						}
 					});
 					$('#temp').click(function() {
 						$('#slidingDiv2').css('visibility', ($('#slidingDiv2').css('visibility') == 'visible') ? 'hidden' : 'visible');
 						if($('#slidingDiv2').css('visibility') == 'hidden') {
-							$('#slidingDiv2').hide();
+							$('#slidingDiv2').fadeOut();
 						}
 						if($('#slidingDiv2').css('visibility') == 'visible') {
-							$('#slidingDiv2').show();
+							$('#slidingDiv2').fadeIn("slow");
 						}
 					});
 				});
@@ -33,7 +34,7 @@
 		</script>
 		
 	</head>
-	<body>
+	<body style="width: 745px">
 		<div>
 			<ul id="links">
 				<li><a href="https://classroom.google.com/" imageanchor="1" target="_blank"><img alt="Google Classroom" src="https://technologybbchs.github.io/assets/img/common/GoogleClassroomBumpMap.png" /></a></li>
@@ -73,7 +74,7 @@
 		<div>
 			<ul id="links">
 				<li><img id="science" class="show_hide" src="https://technologybbchs.github.io/assets/img/common/Science.png"/></li>
-				<li><img id="temp" src="https://technologybbchs.github.io/assets/img/common/Science.png"/></li>
+				<li><img style="visibility: hidden"id="temp" src="https://technologybbchs.github.io/assets/img/common/Science.png"/></li>
 				<li></li>
 				<li></li>
 				<li></li>
@@ -107,7 +108,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="slidingDiv" id="slidingDiv1" style="visibility: hidden">
+		<div class="slidingDiv" id="slidingDiv1" style="visibility: hidden; float: left">
 			<div>
 				<ul id="links">
 					<li><a href="https://phet.colorado.edu/" imageanchor="1" target="_blank"><img alt="Google Classroom" src="https://technologybbchs.github.io/assets/img/science/PhET.png" /></a></li>
@@ -122,30 +123,30 @@
 			<div>
 				<ul class="text" id="links">
 					<li>
-						<p>PhET 1</p>
+						<p>PhET</p>
 					</li>
 					<li>
-						<p>Explore Learning (GIZMOS) 1</p>
+						<p>Explore Learning (GIZMOS)</p>
 					</li>
 					<li>
-						<p>Discovery Education Textbook 1</p>
+						<p>Discovery Education Textbook</p>
 					</li>
 					<li>
-						<p>P-Table 1</p>
+						<p>P-Table</p>
 					</li>
 					<li>
-						<p>Direct Measurement Videos 1</p>
+						<p>Direct Measurement Videos</p>
 					</li>
 					<li>
-						<p>Physics Classroom 1</p>
+						<p>Physics Classroom</p>
 					</li>
 					<li>
-						<p>Mastering Physics 1</p>
+						<p>Mastering Physics</p>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="slidingDiv" id="slidingDiv2" style="visibility: hidden; float: left; overflow: hidden">
+		<div class="slidingDiv" id="slidingDiv2" style="visibility: hidden; float: left">
 			<div>
 				<ul id="links">
 					<li><a href="https://phet.colorado.edu/" imageanchor="1" target="_blank"><img alt="Google Classroom" src="https://technologybbchs.github.io/assets/img/science/PhET.png" /></a></li>
