@@ -8,24 +8,24 @@
 		<!-- Start Div Hidding jQuery Script -->
 		<script>
 			$(document).ready(function() {
-				$('#slidingDiv1').hide();
-				$('#slidingDiv2').hide();
+				$('#slidingDivScience').hide();
+				$('#slidingDivMath').hide();
 					$('#science').click(function() {
-						$('#slidingDiv1').css('visibility', ($('#slidingDiv1').css('visibility') == 'visible') ? 'hidden' : 'visible');
-						if($('#slidingDiv1').css('visibility') == 'hidden') {
-							$('#slidingDiv1').fadeOut();
+						$('#slidingDivScience').css('visibility', ($('#slidingDivScience').css('visibility') == 'visible') ? 'hidden' : 'visible');
+						if($('#slidingDivScience').css('visibility') == 'hidden') {
+							$('#slidingDivScience').fadeOut();
 						}
-						if($('#slidingDiv1').css('visibility') == 'visible') {
-							$('#slidingDiv1').fadeIn("slow");
+						if($('#slidingDivScience').css('visibility') == 'visible') {
+							$('#slidingDivScience').fadeIn("slow");
 						}
 					});
 					$('#math').click(function() {
-						$('#slidingDiv2').css('visibility', ($('#slidingDiv2').css('visibility') == 'visible') ? 'hidden' : 'visible');
-						if($('#slidingDiv2').css('visibility') == 'hidden') {
-							$('#slidingDiv2').fadeOut();
+						$('#slidingDivMath').css('visibility', ($('#slidingDivMath').css('visibility') == 'visible') ? 'hidden' : 'visible');
+						if($('#slidingDivMath').css('visibility') == 'hidden') {
+							$('#slidingDivMath').fadeOut();
 						}
-						if($('#slidingDiv2').css('visibility') == 'visible') {
-							$('#slidingDiv2').fadeIn("slow");
+						if($('#slidingDivMath').css('visibility') == 'visible') {
+							$('#slidingDivMath').fadeIn("slow");
 						}
 					});
 				});
@@ -33,61 +33,60 @@
 		<!-- End Div Hidding jQuery Script -->
 		<!-- Start Common Div -->
 		<div>
-		<div>
-			<ul id="links">
-				<li><a href="https://classroom.google.com/" imageanchor="1" target="_blank"><img alt="Google Classroom" src="https://technologybbchs.github.io/assets/img/common/GoogleClassroomBumpMap.png" /></a></li>
-				<li><a href="https://www.remind.com/log_in" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/common/remind.png" /></a></li>
-				<li><a href="https://kahoot.it/#/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/common/Kahoot!.png" /></a></li>
-				<li><a href="https://quizlet.com/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/common/Quizlet.png" /></a></li>
-				<li><a href="https://docs.google.com/a/bbchs.org/forms/d/e/1FAIpQLScAjwTY7THPFUxq1GepAUvk5_7LtWCHI-do_q0U-F3qA1Sv4Q/closedform" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/common/CASH.png" /></a></li>
-				<li><a href="https://www.collegeboard.org/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/common/CollegeBoard.png" /></a></li>
-				<li>&nbsp;</li>
-			</ul>
-		</div>
-		<div>
-			<ul class="text" id="links">
-				<li>
-					<p>Google Classroom</p>
-				</li>
-				<li>
-					<p>Remind</p>
-				</li>
-				<li>
-					<p>Kahoot</p>
-				</li>
-				<li>
-					<p>Quizlet</p>
-				</li>
-				<li>
-					<p>CASH</p>
-				</li>
-				<li>
-					<p>College Board</p>
-				</li>
-				<li>
-					<p>&nbsp;</p>
-				</li>
-			</ul>
-		</div>
+			<div>
+				<ul id="links">
+					<li><a href="https://classroom.google.com/" imageanchor="1" target="_blank"><img alt="Google Classroom" src="https://technologybbchs.github.io/assets/img/common/GoogleClassroomBumpMap.png" /></a></li>
+					<li><a href="https://www.remind.com/log_in" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/common/remind.png" /></a></li>
+					<li><a href="https://kahoot.it/#/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/common/Kahoot!.png" /></a></li>
+					<li><a href="https://quizlet.com/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/common/Quizlet.png" /></a></li>
+					<li><a href="https://docs.google.com/a/bbchs.org/forms/d/e/1FAIpQLScAjwTY7THPFUxq1GepAUvk5_7LtWCHI-do_q0U-F3qA1Sv4Q/closedform" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/common/CASH.png" /></a></li>
+					<li><a href="https://www.collegeboard.org/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/common/CollegeBoard.png" /></a></li>
+					<li>&nbsp;</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="text" id="links">
+					<li>
+						<p>Google Classroom</p>
+					</li>
+					<li>
+						<p>Remind</p>
+					</li>
+					<li>
+						<p>Kahoot</p>
+					</li>
+					<li>
+						<p>Quizlet</p>
+					</li>
+					<li>
+						<p>CASH</p>
+					</li>
+					<li>
+						<p>College Board</p>
+					</li>
+					<li>
+						<p>&nbsp;</p>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<!-- End Common Div -->
 		<hr />
 		<p>&nbsp;</p>
 		<!-- Start Selection Area -->
 		<div>
-		<div>
-			<ul id="links">
-				<li><img id="science" src="https://technologybbchs.github.io/assets/img/common/Science.png" /></li>
-				<li><img id="math" src="https://technologybbchs.github.io/assets/img/math/Math.png" /></li>
-				<li><img id="counseling" src="https://technologybbchs.github.io/assets/img/common/Counseling.png" /></li>
-				<li>&nbsp;</li>
-				<li>&nbsp;</li>
-				<li>&nbsp;</li>
-				<li>&nbsp;</li>
-			</ul>
-		</div>
-		<p>&nbsp;</p>
-		<div>
+			<div>
+				<ul id="links">
+					<li><img id="science" src="https://technologybbchs.github.io/assets/img/common/Science.png" /></li>
+					<li><img id="math" src="https://technologybbchs.github.io/assets/img/math/Math.png" /></li>
+					<li><img id="counseling" src="https://technologybbchs.github.io/assets/img/common/Counseling.png" /></li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+				</ul>
+			</div>
+			<p>&nbsp;</p>
 			<div>
 				<ul class="text" id="links">
 					<li>
@@ -113,82 +112,87 @@
 					</li>
 				</ul>
 			</div>
-			<div class="slidingDiv" id="slidingDiv1" style="visibility: hidden; float: left">
-				<div>
-					<ul id="links">
-						<li><a href="https://phet.colorado.edu/" imageanchor="1" target="_blank"><img alt="Google Classroom" src="https://technologybbchs.github.io/assets/img/science/PhET.png" /></a></li>
-						<li><a href="http://www.explorelearning.com/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/ExploreLearning.png" /></a></li>
-						<li><a href="http://google.discoveryeducation.com/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/DiscoveryEducationTextbook.png" /></a></li>
-						<li><a href="http://www.ptable.com/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/Ptable.png" /></a></li>
-						<li><a href="http://serc.carleton.edu/dmvideos/videos.html" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/DirectMeasurementVideos.png" /></a></li>
-						<li><a href="http://www.physicsclassroom.com/Physics-Interactives" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/ThePhysicsClassroom.png" /></a></li>
-						<li><a href="https://www.masteringphysics.com/site/login.html" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/MasteringPhysics.png" /></a></li>
-					</ul>
-				</div>
-				<div>
-					<ul class="text" id="links">
-						<li>
-							<p>PhET</p>
-						</li>
-						<li>
-							<p>Explore Learning (GIZMOS)</p>
-						</li>
-						<li>
-							<p>Discovery Education Textbook</p>
-						</li>
-						<li>
-							<p>P-Table</p>
-						</li>
-						<li>
-							<p>Direct Measurement Videos</p>
-						</li>
-						<li>
-							<p>Physics Classroom</p>
-						</li>
-						<li>
-							<p>Mastering Physics</p>
-						</li>
-					</ul>
-				</div>
+		</div>
+		<!-- End Selection Area -->
+		<!-- Start Sliding Div Science -->
+		<div class="slidingDiv" id="slidingDivScience" style="visibility: hidden; float: left">
+			<div>
+				<ul id="links">
+					<li><a href="https://phet.colorado.edu/" imageanchor="1" target="_blank"><img alt="Google Classroom" src="https://technologybbchs.github.io/assets/img/science/PhET.png" /></a></li>
+					<li><a href="http://www.explorelearning.com/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/ExploreLearning.png" /></a></li>
+					<li><a href="http://google.discoveryeducation.com/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/DiscoveryEducationTextbook.png" /></a></li>
+					<li><a href="http://www.ptable.com/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/Ptable.png" /></a></li>
+					<li><a href="http://serc.carleton.edu/dmvideos/videos.html" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/DirectMeasurementVideos.png" /></a></li>
+					<li><a href="http://www.physicsclassroom.com/Physics-Interactives" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/ThePhysicsClassroom.png" /></a></li>
+					<li><a href="https://www.masteringphysics.com/site/login.html" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/science/MasteringPhysics.png" /></a></li>
+				</ul>
 			</div>
-			<div class="slidingDiv" id="slidingDiv2" style="visibility: hidden; float: left">
-				<div>
-					<ul id="links">
-						<li><a href="https://www.khanacademy.org/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/math/KhanAcademy.png" /></a></li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-					</ul>
-				</div>
-				<div>
-					<ul class="text" id="links">
-						<li>
-							<p>Khan Academy</p>
-						</li>
-						<li>
-							<p>&nbsp;</p>
-						</li>
-						<li>
-							<p>&nbsp;</p>
-						</li>
-						<li>
-							<p>&nbsp;</p>
-						</li>
-						<li>
-							<p>&nbsp;</p>
-						</li>
-						<li>
-							<p>&nbsp;</p>
-						</li>
-						<li>
-							<p>&nbsp;</p>
-						</li>
-					</ul>
-				</div>
+			<div>
+				<ul class="text" id="links">
+					<li>
+						<p>PhET</p>
+					</li>
+					<li>
+						<p>Explore Learning (GIZMOS)</p>
+					</li>
+					<li>
+						<p>Discovery Education Textbook</p>
+					</li>
+					<li>
+						<p>P-Table</p>
+					</li>
+					<li>
+						<p>Direct Measurement Videos</p>
+					</li>
+					<li>
+						<p>Physics Classroom</p>
+					</li>
+					<li>
+						<p>Mastering Physics</p>
+					</li>
+				</ul>
 			</div>
 		</div>
-	</body>
+		<!-- End Sliding Div Science -->
+		<!-- Start Sliding Div Math -->
+		<div class="slidingDiv" id="slidingDivMath" style="visibility: hidden; float: left">
+			<div>
+				<ul id="links">
+					<li><a href="https://www.khanacademy.org/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/math/KhanAcademy.png" /></a></li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="text" id="links">
+					<li>
+						<p>Khan Academy</p>
+					</li>
+					<li>
+						<p>&nbsp;</p>
+					</li>
+					<li>
+						<p>&nbsp;</p>
+					</li>
+					<li>
+						<p>&nbsp;</p>
+					</li>
+					<li>
+						<p>&nbsp;</p>
+					</li>
+					<li>
+						<p>&nbsp;</p>
+					</li>
+					<li>
+						<p>&nbsp;</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- End Sliding Div Math -->
+		</body>
 </html>
