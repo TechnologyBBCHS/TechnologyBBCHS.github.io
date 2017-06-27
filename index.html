@@ -10,6 +10,7 @@
 			$(document).ready(function() {
 				$('#slidingDivScience').hide();
 				$('#slidingDivMath').hide();
+				$('#slidingDivCounseling').hide();
 					$('#science').click(function() {
 						$('#slidingDivScience').css('visibility', ($('#slidingDivScience').css('visibility') == 'visible') ? 'hidden' : 'visible');
 						if($('#slidingDivScience').css('visibility') == 'hidden') {
@@ -26,6 +27,15 @@
 						}
 						if($('#slidingDivMath').css('visibility') == 'visible') {
 							$('#slidingDivMath').fadeIn("slow");
+						}
+					});
+					$('#counseling').click(function() {
+						$('#slidingDivCounseling').css('visibility', ($('#slidingDivCounseling').css('visibility') == 'visible') ? 'hidden' : 'visible');
+						if($('#slidingDivCounseling').css('visibility') == 'hidden') {
+							$('#slidingDivCounseling').fadeOut();
+						}
+						if($('#slidingDivCounseling').css('visibility') == 'visible') {
+							$('#slidingDivCounseling').fadeIn("slow");
 						}
 					});
 				});
@@ -194,5 +204,45 @@
 			</div>
 		</div>
 		<!-- End Sliding Div Math -->
+		<!-- Start Sliding Div Counseling -->
+		<div class="slidingDiv" id="slidingDivCounseling" style="visibility: hidden; float: left">
+			<div>
+				<ul id="links">
+					<li><a href="https://www.khanacademy.org/" imageanchor="1" target="_blank"><img src="https://technologybbchs.github.io/assets/img/math/KhanAcademy.png" /></a></li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="text" id="links">
+					<li>
+						<p>Khan Academy</p>
+					</li>
+					<li>
+						<p>&nbsp;</p>
+					</li>
+					<li>
+						<p>&nbsp;</p>
+					</li>
+					<li>
+						<p>&nbsp;</p>
+					</li>
+					<li>
+						<p>&nbsp;</p>
+					</li>
+					<li>
+						<p>&nbsp;</p>
+					</li>
+					<li>
+						<p>&nbsp;</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- End Sliding Div Counseling -->
 		</body>
 </html>
