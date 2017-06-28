@@ -1,0 +1,12 @@
+#mpContainer {
+    min-height: 300px;
+    padding: 104px 8px 0;
+}
+#mainNav div {
+    height: 88px;
+    min-height: 88px;
+}
+body {
+    background: #000 url(/vimages/L9/mainBodyBG.jpg) no-repeat center top fixed;
+    background-size: cover;
+}
