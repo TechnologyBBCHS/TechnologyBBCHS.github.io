@@ -17,6 +17,6 @@ body {
 	-webkit-box-shadow: -9px 13px 20px 0px #1d2129;
 	-moz-box-shadow: -9px 13px 20px 0px #1d2129;
 }
-#mainNav div.bOne {
+#mainNav div.bOne,#mainNav div.bThree,#mainNav div.bFive, #mainNav div.bTwo,#mainNav div.bFour, #mainNav div.downArrow {
 	border-radius: 0px 0px 9px 9px;
 }
