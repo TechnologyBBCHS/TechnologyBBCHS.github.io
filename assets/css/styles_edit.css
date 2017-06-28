@@ -1,17 +1,22 @@
 #mpContainer {
-    min-height: 300px;
-    padding: 104px 8px 0;
+    padding: 108px 8px 0;
 }
 #mainNav div {
     height: 88px;
     min-height: 88px;
+	box-shadow: 4px 3px 20px 0px #1d2129;
+	-webkit-box-shadow: 4px 3px 20px 0px #1d2129;
+	-moz-box-shadow: 4px 3px 20px 0px #1d2129;
 }
 body {
     background: #000 url(http://www.bbchs.org/vimages/L9/mainBodyBG.jpg) no-repeat center top fixed;
     background-size: cover;
 }
-@media screen and (max-width: 1640px) {
-	body {
-		background-size: inherit;
-	}
+#wrapper3 {
+	box-shadow: -9px 13px 20px 0px #1d2129;
+	-webkit-box-shadow: -9px 13px 20px 0px #1d2129;
+	-moz-box-shadow: -9px 13px 20px 0px #1d2129;
+}
+#mainNav div.bOne {
+	border-radius: 0px 0px 9px 9px;
 }
